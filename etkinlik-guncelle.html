@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlik Güncelle</title>
+  <link rel="stylesheet" href="2416501028.css">
+  <script type="module" src="js/event-form.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Etkinlik Güncelle</h1>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <a href="etkinlik-ekle.html">Ekle</a>|
+      </nav>
+    </header>
+
+    <main>
+      <h1>Etkinlik Güncelle</h1>
+
+            <form id="etkinlik-formu" data-mode="guncelle" action="#" method="post">
+                <div class="form-group">
+                    <label for="ad">Etkinlik Adı:</label>
+                    <input type="text" id="ad" name="ad">
+                    <span id="ad-hata" class="hata-metni"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" name="kategori">
+                        <option value="">Seçiniz</option>
+                        <option value="Seminer">Seminer</option>
+                        <option value="Atölye">Atölye</option>
+                        <option value="Söyleşi">Söyleşi</option>
+                    </select>
+                    <span id="kategori-hata" class="hata-metni"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tarih">Tarih:</label>
+                    <input type="text" id="tarih" name="tarih" placeholder="GG-AA-YYYY">
+                    <span id="tarih-hata" class="hata-metni"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="saat">Saat:</label>
+                    <input type="text" id="saat" name="saat" placeholder="14:00">
+                    <span id="saat-hata" class="hata-metni"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="yer">Yer / Konum:</label>
+                    <input type="text" id="yer" name="yer">
+                    <span id="yer-hata" class="hata-metni"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="kontenjan">Kontenjan:</label>
+                    <input type="number" id="kontenjan" name="kontenjan">
+                    <span id="kontenjan-hata" class="hata-metni"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="aciklama">Açıklama:</label>
+                    <textarea id="aciklama" name="aciklama" rows="4"></textarea>
+                    <span id="aciklama-hata" class="hata-metni"></span>
+                </div>
+
+                <button type="submit">Güncelle</button>
+            </form>
+
+            <div id="form-mesaj"></div>
+    </main>
+  </div>
+</body>
+</html>
